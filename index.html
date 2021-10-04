@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class ="calculator">
+        <div class ="menu">
+            <h1 class = "text">calc</h1>
+            <div class = 'theme'>
+                <div class = "box">
+                    <label for ="theme1">3
+                        <input type ="radio" name ="theme" value="theme3" onclick="theme()" class = "text">
+                    </label>
+                    <label for ="theme2">2
+                        <input type ="radio" name ="theme" value="theme2" checked onclick="theme()" class = "text">
+                    </label>
+                    <label for ="theme3">1
+                    <input type ="radio" name ="theme" value="theme1" onclick="theme()" class = "text">
+                    </label>
+                    <h4 class = "text">theme</h4>
+                </div>
+                
+            </div>
+        </div>
+        <div class = "result" id ="cal">
+            <p id = "result"></p>
+        </div>
+        <div class ="grid" id = "grid">
+            <button value="7" onclick="calculator('7')" class="btn normal">7</button>
+            <button value="8" onclick="calculator('8')" class="btn normal">8</button>
+            <button value="9" onclick="calculator('9')" class="btn normal">9</button>
+            <button value = "del" onclick="calculator('del')" class="btn blue" id = "del">DEL</button>
+            <button value="4" onclick="calculator('4')" class="btn normal">4</button>
+            <button value="5" onclick="calculator('5')" class="btn normal">5</button>
+            <button value="6" onclick="calculator('6')" class="btn normal">6</button>
+            <button value="+" onclick="calculator('+')" class="btn normal">+</button>
+            <button value="1" onclick="calculator('1')" class="btn normal">1</button>
+            <button value="2" onclick="calculator('2')" class="btn normal">2</button>
+            <button value="3" onclick="calculator('3')" class="btn normal">3</button>
+            <button value="-" onclick="calculator('-')" class="btn normal">-</button>
+            <button  value="." onclick="calculator('.')" class="btn normal">.</button>
+            <button value="0" onclick="calculator('0')" class="btn normal">0</button>
+            <button value="/" onclick="calculator('/')" class="btn normal">/</button>
+            <button value="*" onclick="calculator('*')" class="btn normal">x</button>
+            <button class = "item1 btn" onclick = "reset()" id ="reset">RESET</button>
+            <button class = "item2 btn" value="=" onclick="calculator('=')" id ="equal">=</button>
+        </div>
+
+    </div>
+
+    <script src ="App.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: #f4f3f3;
+}
+
+.result {
+  display: flex;
+  height: 50px;
+  width: 93%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #fff;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: end;
+}
+
+#result {
+  font-size: 30px;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+
+button {
+  font-family: "Spartan", sans-serif;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(90px, 1fr));
+  grid-template-rows: repeat(5, minmax(60px, 1fr));
+  grid-gap: 1rem;
+  background-color: #eae3dc;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 0.5rem 1rem 0.5rem;
+  font-size: 25px;
+  border: none;
+  font-weight: bolder;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.623);
+  background-color: #e5e4e1;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  background-color: #377f86;
+  color: #fff;
+  font-size: 23px;
+}
+
+.blue {
+  background-color: #377f86;
+  color: #fff;
+  font-size: 23px;
+}
+
+.item2 {
+  grid-column: 3 / span 2;
+  background-color: #ca5502;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.box label {
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.2em;
+}
+
+.box label input[type="radio"] {
+  display: block;
+  margin: 0.5em auto;
+}
